@@ -7,21 +7,22 @@ print(f"Get my Directory name from /home/azizi {os.path.dirname('/home/azizi')}"
 print(f"Check The existence of directory /home/azizi: {os.path.exists('/home/azizi')}")
 print(f"Join path directory : {os.path.join('/home','aziz','test')}")
 
-#detele operation with os
-mypath = os.getcwd()
-myfile = os.path.join(mypath, 'test.txt')
-if os.path.exists(myfile):
-    os.unlink(myfile)
+# detele operation with os
+# mypath = os.getcwd()
+# myfile = os.path.join(mypath, 'test.txt')
+# if os.path.exists(myfile):
+#     os.unlink(myfile)
 
 
 # create directory recursively
-mypath = os.getcwd()
-mydir = os.path.join(mypath, 'test aja')
-os.makedirs(mydir,exist_ok=True)
+# mypath = os.getcwd()
+# mydir = os.path.join(mypath, 'treecopy')
+# os.makedirs(mydir,exist_ok=True)
+# print(mydir)
 
 #755
-import stat
-os.chmod(mydir, stat.S_IRWXG)
-
-os.chmod(mydir,stat.S_ISUID)
+# import stat
+# os.chmod(mydir, stat.S_IRWXG)
+#
+# os.chmod(mydir,stat.S_ISUID)
 
